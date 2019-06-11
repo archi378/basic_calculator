@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basic_Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <form name="calculator">
+            <input id="output" type="text" value="" name="output"/><br></br>
+
+            <input type="button" class="operator" value=" C " onclick="calculator.output.value = ''">
+            <input type="button" class="operator" value=" &#8656; " onclick="backFunction()">
+            <input type="button" class="operator" value=" % " onclick="calculator.output.value = eval(calculator.output.value)/100">
+            <input type="button" class="operator" value=" &#247; " onclick="calculator.output.value += '/'">
+            <br></br>
+
+            <input type="button" class="number" value=" 1 " onclick="calculator.output.value += '1'">
+            <input type="button" class="number" value=" 2 " onclick="calculator.output.value += '2'">
+            <input type="button" class="number" value=" 3 " onclick="calculator.output.value += '3'">
+            <input type="button" class="operator" value=" + " onclick="calculator.output.value += '+'">
+            <br></br>
+
+            <input type="button" class="number" value=" 4 " onclick="calculator.output.value += '4'">
+            <input type="button" class="number" value=" 5 " onclick="calculator.output.value += '5'">
+            <input type="button" class="number" value=" 6 " onclick="calculator.output.value += '6'">
+            <input type="button" class="operator" value=" - " onclick="calculator.output.value += '-'">
+            <br></br>
+
+            <input type="button" class="number" value=" 7 " onclick="calculator.output.value += '7'">
+            <input type="button" class="number" value=" 8 " onclick="calculator.output.value += '8'">
+            <input type="button" class="number" value=" 9 " onclick="calculator.output.value += '9'">
+            <input type="button" class="operator" value=" x " onclick="calculator.output.value += '*'">
+            <br></br>
+
+            <input type="button" class="operator" value=" &#8730; " onclick="sqrtFunction()">
+            <input type="button" class="number" value=" 0 " onclick="calculator.output.value += '0'">
+            <input type="button" class="number" value=" . " onclick= "decFunction()">
+            <input type="button" class="operator" value=" = " onclick="equalToFunction()">
+            <br></br>
+        </form>
+    </div>
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
