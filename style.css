@@ -25,6 +25,11 @@
     margin-right: 5px;
     font-size: 20px;
     font-weight: bold;
+    outline: line;
+}
+
+.calculator input:focus {
+    border: none;
 }
 
 .number {
@@ -33,7 +38,7 @@
     border: none;
 }
 
-.number:hover {
+.number:active {
     background: #9b9797;
 }
 
@@ -43,6 +48,6 @@
     box-shadow: 2px 2px 4px 2px #a18c8c;
 }
 
-.operator:hover {
+.operator:active {
     background: #cc6161;
 }
